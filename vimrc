@@ -1,10 +1,12 @@
 set nocompatible
-filetype off
+" filetype off
+filetype plugin indent on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 let g:ycm_confirm_extra_conf = 0
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
+Plugin 'indent'
 Plugin 'Yggdroot/indentLine'
 call vundle#end()
 set number
@@ -13,10 +15,10 @@ colorscheme apprentice
 syntax enable
 " whitespace highlighting stuff
 set list lcs=trail:.,tab:»·
-set tabstop=8
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set noexpandtab
+set expandtab
 set showmatch
 set incsearch
 set hlsearch
